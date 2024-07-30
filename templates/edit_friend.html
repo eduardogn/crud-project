@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Friend</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Edit Friend</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name" value="{{ friend.name }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Age:</label>
+                <input type="number" name="age" value="{{ friend.age }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" value="{{ friend.email }}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Most Famous Sentence:</label>
+                <input type="text" name="sentence" value="{{ friend.sentence }}" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Update Friend</button>
+        </form>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Back to List</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
